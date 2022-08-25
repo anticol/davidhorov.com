@@ -1,0 +1,15 @@
+.next/
+coverage
+node_modules
+stats.json
+yarn-error.log
+.env
+.env.local
+.env.production
+.env.staging
+.idea/
+.vs/*
+certificates/
+dist/
+dist/*
+/report*
