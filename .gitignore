@@ -13,3 +13,6 @@ certificates/
 dist/
 dist/*
 /report*
+
+# Contentlayer
+.contentlayer
