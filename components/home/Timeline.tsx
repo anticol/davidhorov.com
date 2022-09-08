@@ -5,14 +5,12 @@ import SectionTitle from '../global/SectionTitle';
 import EducationIcon from './EducationIcon';
 import WorkIcon from './WorkIcon';
 import styled from 'styled-components'
-import ArrowIcon from './ArrowIcon';
 const Education = () => {
   return (
 
-
     <div className="flex flex-col text-left justify-between pt-8 relative">
       <div id="learnmore">
-        <SectionTitle title="Here are my working timeline" />
+        <SectionTitle title="My working & university experience" />
       </div>
       <VerticalTimeline>
 

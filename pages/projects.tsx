@@ -11,6 +11,10 @@ function projects() {
     >
       <Heading />
       <Projects />
+
+      <div style={{ marginTop: '32px', fontSize: '20px' }}>
+        And many more...
+      </div>
     </Page>
   );
 }

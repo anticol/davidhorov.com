@@ -5,6 +5,8 @@ import Link from "next/link";
 import styled from 'styled-components'
 
 function ProjectCard({ project }) {
+  const [showMore, setShowMore] = React.useState(false);
+
   return (
     <div
       className="max-w-sm mx-auto flex flex-col projects-center md:projects-start md:justify-center"
@@ -48,7 +50,21 @@ function ProjectCard({ project }) {
             )}
           </div>
         </div>
-        <p className="text-fun-gray text-left text-sm">{project.desc}</p>
+        <p className="text-fun-gray text-left text-sm">
+
+          {showMore === false && project?.desc.length > 300 ? (
+            <>
+              {project.desc.slice(0, 300)}...{' '}
+              <ShowMoreButton onClick={() => {
+                setShowMore(true);
+              }}>Show more</ShowMoreButton>
+            </>
+          ) :
+            (
+              project.desc
+            )}
+
+        </p>
         <ul className="flex flex-wrap items-center mt-2 -ml-2 list-none">
           {project.tags.map((tag) => {
             return (
@@ -62,8 +78,8 @@ function ProjectCard({ project }) {
             );
           })}
         </ul>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
 
@@ -73,4 +89,12 @@ export default ProjectCard;
 const ProjectImg = styled.img`
     height: 200px !important;
 
+`
+const ShowMoreButton = styled.span`
+  text-decoration:underline;
+  margin:0 auto;
+  margin-top:8px;
+  cursor:pointer;
+  font-style:italic;
+  color:#a2a2eb;
 `

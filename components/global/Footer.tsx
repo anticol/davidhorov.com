@@ -13,8 +13,8 @@ const arrowUp = (
 function Footer() {
   return (
     <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
-      <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
-        {footer.columns.map((item, index) => {
+      <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-2 justify-between items-start">
+        {/* {footer.columns.map((item, index) => {
           return (
             <div key={index} className="text-left mb-5 sm:mb-0">
               <h4 className="uppercase text-fun-gray text-sm font-bold">
@@ -46,7 +46,7 @@ function Footer() {
               </div>
             </div>
           );
-        })}
+        })} */}
       </div>
       <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
         <p className="flex flex-col items-center justify-center ">

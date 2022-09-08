@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Link from "next/link";
-import {routes} from "@/data/global";
+import { routes } from "@/data/global";
 import useDelayedRender from "use-delayed-render";
 
 export default function MobileNavbar() {
@@ -41,7 +41,7 @@ export default function MobileNavbar() {
             <img
               className="mr-3"
               src="/static/logos/logo_full.svg"
-              width="160"
+              width="90"
             />
           </Link>
         </li>

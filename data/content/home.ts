@@ -91,13 +91,27 @@ export const testimonials: Testimonial[] = [
     quote:
       "His work was allways done on time and in hight quality beyond my expectations",
     name: "Denis Staník",
-    job: "CEO of RiesimeFinancie",
+    job: "CEO of Riesime Financie",
   },
   {
     quote:
       "David was very helpful with setting up everyitng what we needed. His work was always done in time and in hight quality.",
     name: "Lucie Ulrichová",
-    job: "CEO of Bmedic education",
+    job: "CEO of Bmedic Education",
+  },
+
+  {
+    quote:
+      "The communication with me and my clients and web development itself was done perfectly.",
+    name: "Houssam All",
+    job: "Project manager"
+  },
+
+  {
+    quote:
+      "David can work diligently with a reasonable amount of independence and reliability. When necessary, he was readily able to investigate and learn new skills.",
+    name: "Martin Ukrop",
+    job: "Researcher, teacher, PhD candidate"
   },
 
 ];
