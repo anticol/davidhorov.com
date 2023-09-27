@@ -8,7 +8,25 @@ const projects: Project[] = [
     desc: "Campiri is the largest online campervan and recreational vehicle rental site. I have been a part of frontend dev team, with the role of developer and leader. I have developed public sites, landing pages, whole booking flow, payments integration, connections to automated tools like Zapier,... ",
     img: "/static/projects/og_image_campiri_main.png",
     link: "https://campiri.com",
-    tags: ["React", "Typescript", "NextJS", "CSS",],
+    tags: ["React", "Typescript", "NextJS", "CSS/styled-components", "Redux","Jotai","Turborepo","Zapier","cucumber",'Material UI',"Google Analytics","Stripe"],
+  },
+
+  {
+    id: 1,
+    title: "Dokempu",
+    desc: "Dokempu is the largest online campsite guide with easy search. Choose from thousands of campsites for an ideal holiday in nature. We have migrated the old system to a new React/Next.js application with latest technologies used, including data migration and brand new design. ",
+    img: "/static/projects/dokempu.png",
+    link: "https://dokempu.cz",
+    tags: ["React", "Typescript", "NextJS", "CSS/styled-components", "Jotai","Turborepo",'Material UI',"Google Analytics"],
+  },
+
+  {
+    id: 2,
+    title: "Boatsetter",
+    desc: "Boatsetter - world’s leading boat rental community. With more than 50,000 boats in over 700 locations worldwide with yearly earning potential $20,000+ for boat owners. ",
+    img: "/static/projects/boatsetter.png",
+    link: "https://boatsetter.com",
+    tags: ["React", "Typescript", "NextJS", "CSS/styled-components", "Redux"],
   },
 
   {
@@ -16,7 +34,7 @@ const projects: Project[] = [
     title: "Fee time in Brno",
     desc: "Web application mapping options of spending free time in Brno. It is a mashup application which collects open data from different sources and shows them on the map. It shows the possibilities of spending leisure time in Brno and its surroundings. Created application supports smart city concepts and was successfully deployed to the data portal of the city of Brno.  ",
     img:"/static/projects/volnycasvbrne.jpeg",
-    tags: ["Javascript", "CSS", "React"],
+    tags: ["React","Javascript", "CSS",],
   },
 
   {
@@ -25,7 +43,7 @@ const projects: Project[] = [
     desc: "With Trisbee on your phone, you don’t have to worry anymore whether you have cash or a card with you. I was a part of development team building Frontend",
     img: "/static/projects/trisbee.png",
     link: 'https://trisbee.com/',
-    tags: ["React", "Typescript", "NextJS","CSS", "Firebase"],
+    tags: ["React", "Typescript", "NextJS","CSS", "Firebase","mailchimp"],
   },
 
   {
