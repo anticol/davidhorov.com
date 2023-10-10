@@ -73,6 +73,14 @@ export const skills: Skill[] = [
 ];
 
 export const testimonials: Testimonial[] = [
+
+  {
+    quote:
+    "David is notable for his substantial level of dedication, consistently getting things done no matter the task at hand. His hard working attitude and steadfast reliability speak volumes about his professional commitment.",
+    name: "Jan Pospíšil",
+    job: "CTO of Prague Labs/Iguana",
+  },
+
   {
     quote:
       "Given the quality of the developed application and high quality of the thesis text, I nominated him for the Dean’s award, which he successfully got. ",
@@ -93,25 +101,26 @@ export const testimonials: Testimonial[] = [
     name: "Denis Staník",
     job: "CEO of Riesime Financie",
   },
-  {
-    quote:
-      "David was very helpful with setting up everyitng what we needed. His work was always done in time and in hight quality.",
-    name: "Lucie Ulrichová",
-    job: "CEO of Bmedic Education",
-  },
 
-  {
-    quote:
-      "The communication with me and my clients and web development itself was done perfectly.",
-    name: "Houssam All",
-    job: "Project manager"
-  },
+
+  // {
+  //   quote:
+  //     "The communication with me and my clients and web development itself was done perfectly.",
+  //   name: "Houssam All",
+  //   job: "Project manager"
+  // },
 
   {
     quote:
       "David can work diligently with a reasonable amount of independence and reliability. When necessary, he was readily able to investigate and learn new skills.",
     name: "Martin Ukrop",
     job: "Researcher, teacher, PhD candidate"
+  },
+  {
+    quote:
+      "David was very helpful with setting up everyitng what we needed. His work was always done in time and in hight quality.",
+    name: "Lucie Ulrichová",
+    job: "CEO of Bmedic Education",
   },
 
 ];
@@ -122,6 +131,10 @@ export const timelineItems: Timeline[] = [
     date: "December 2020 - Present",
     position:'Lead frontend developer',
     description: "Developing React/Next.js applications for various clients. Leading junior Frontend devs.",
+    lor: [{
+      title: 'Recommendation letter - Jan Pospíšil - CTO',
+      path: '/static/documents/lor_jan_pospisil.pdf'
+   }]
   },
 
   {
@@ -132,8 +145,7 @@ export const timelineItems: Timeline[] = [
     lor: [{
       title: 'Recommendation letter - Antonin Pospisil',
       path: '/static/documents/lor_antonin_pospisil.pdf'
-   }
-]
+   }]
   },
 
   {
