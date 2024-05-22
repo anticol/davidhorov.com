@@ -17,10 +17,11 @@ type LOR = {
 
 type Timeline = {
   heading: string,
+  image?: string,
   date: string,
   position: string,
   description: string,
-  education?:boolean,
+  education?: boolean,
   lor?: Array<LOR>,
 };
 
@@ -36,6 +37,15 @@ export const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
     style: { filter: "invert(1)" },
   },
+  {
+    title: "Typescript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
+    title: "Jotai",
+    icon: "https://cdn.candycode.com/jotai/jotai-mascot.png",
+  },
+
 
   {
     title: "HTML",
@@ -50,13 +60,8 @@ export const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
-    title: "Typescript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  },
-  {
-    title: "SQL",
-    icon: "https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/postgresql.svg",
-    style: { filter: "invert(1)" },
+    title: "Jest",
+    icon: "https://www.svgrepo.com/show/353930/jest.svg",
   },
   {
     title: "Git",
@@ -70,15 +75,20 @@ export const skills: Skill[] = [
     title: "Figma",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
+  {
+    title: "SQL",
+    icon: "https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/postgresql.svg",
+    style: { filter: "invert(1)" },
+  },
 ];
 
 export const testimonials: Testimonial[] = [
 
   {
     quote:
-    "David is notable for his substantial level of dedication, consistently getting things done no matter the task at hand. His hard working attitude and steadfast reliability speak volumes about his professional commitment.",
+      "David is notable for his substantial level of dedication, consistently getting things done no matter the task at hand. His hard working attitude and steadfast reliability speak volumes about his professional commitment.",
     name: "Jan Pospíšil",
-    job: "CTO of Prague Labs/Iguana",
+    job: "CTO of Iguana",
   },
 
   {
@@ -127,45 +137,54 @@ export const testimonials: Testimonial[] = [
 
 export const timelineItems: Timeline[] = [
   {
-    heading: "Prague Labs",
-    date: "December 2020 - Present",
-    position:'Lead frontend developer',
+    heading: "Tesla",
+    image: '/static/companies/tesla.svg',
+    date: "January 2024 - Present",
+    position: 'Software engineer (React)',
+    description: "Designing and developing scalable software systems (in React) to enhance Tesla's Berlin Gigafactory operations with the focus on frontend development. Creating robust solutions to boost production efficiency, increase automation, and support sustainable growth, integrating advanced technologies to meet evolving needs.",
+  },
+  {
+    heading: "Iguana",
+    image: '/static/companies/iguana.jpeg',
+    date: "November 2020 - October 2023",
+    position: 'Lead Frontend developer',
     description: "Developing React/Next.js applications for various clients. Leading junior Frontend devs.",
     lor: [{
       title: 'Recommendation letter - Jan Pospíšil - CTO',
       path: '/static/documents/lor_jan_pospisil.pdf'
-   }]
+    }]
   },
 
   {
     heading: "Trisbee",
+    image: '/static/companies/trisbee.jpeg',
     date: "February 2020 - December 2020",
-    position:'Fronted developer',
+    position: 'Fronted developer',
     description: "Developing React/Next.js applications in the area of fintech. Tech stack and tools: React, Next.js, SASS, Bootstrap, Avocode, Figma ",
     lor: [{
       title: 'Recommendation letter - Antonin Pospisil',
       path: '/static/documents/lor_antonin_pospisil.pdf'
-   }]
+    }]
   },
 
   {
     heading: "Master's degree programme",
     date: "December 2017 - February 2020",
-    position:"Masaryk University, Faculty of Informatics",
+    position: "Masaryk University, Faculty of Informatics",
     description: "I was studying Service Science, Management and Engineering. Holder of deans award",
-    education:true,
+    education: true,
     lor: [{
       title: 'Recommendation letter - Masaryk University',
       path: '/static/documents/lor_hana_rudova.pdf'
 
-   }
-]
+    }
+    ]
   },
-  
+
   {
     heading: "Freelancing",
     date: "December 2017 - February 2020",
-    position:'Web developer',
+    position: 'Web developer',
     description: "Working remotely. Mostly focused on front-end developement. External collaboration with digital agencies, companies and individuals. Using HTML5, CSS3, JavaScript, Vue.js jQuerry, Bootstrap, PHP, SQL, SAAS, LEES, GIT, Jira, Confluence, Gimp,...",
     lor: [
       {
@@ -187,41 +206,41 @@ export const timelineItems: Timeline[] = [
         path: '/static/documents/lor-houssam-all.pdf'
 
       },
-]
+    ]
   },
   {
     heading: "Exchange student",
     date: "February 2018 - July 2018",
-    position:"University of Balearic Islands, Faculty of Science",
+    position: "University of Balearic Islands, Faculty of Science",
     description: "I took 4 courses with an average grade of 1.37",
-    education:true,
+    education: true,
   },
 
   {
     heading: "Mautilus",
     date: "November 2016 - November 2017",
-    position:'Frontend developer',
+    position: 'Frontend developer',
     description: "Development of javascript applications for Smart TV, HbbTV and related technologies, ensuring the technical feasibility of UI/UX designs, transforming mockups into code pixel by pixel, helping back-end developers and QA engineers with troubleshooting, writing functional requirement documents and guides, collaborating with other team members and stakeholders. Using: React, Redux, HTML5, CSS3, jQuery, Grunt, Git, Jira, Confluence, Gimp, Source Tree"
   },
- 
+
 
   {
     heading: "Exchange student",
     date: "February 2016 - July 2016",
-    position:"University of Porto, Faculty of Engineering",
+    position: "University of Porto, Faculty of Engineering",
     description: "While studying abroad I discovered new ways of thinking and problem solving. I took 5 courses with an average grade of 1.30",
-    education:true,
+    education: true,
   },
   {
     heading: "Bachelor's degree programme",
     date: "September 2014 - June 2017",
-    position:"Masaryk University, Faculty of Informatics",
+    position: "Masaryk University, Faculty of Informatics",
     description: "I studied Computer Science. I successfully completed 51 courses, graduating in the 88th percentile.",
-    education:true,
+    education: true,
     lor: [{
-          title: 'Recommendation letter - Masaryk University',
-          path: 'abc'
-       }
+      title: 'Recommendation letter - Masaryk University',
+      path: 'abc'
+    }
     ]
   }
 

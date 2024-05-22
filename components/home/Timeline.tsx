@@ -5,6 +5,8 @@ import SectionTitle from '../global/SectionTitle';
 import EducationIcon from './EducationIcon';
 import WorkIcon from './WorkIcon';
 import styled from 'styled-components'
+import Image from 'next/image';
+
 const Education = () => {
   return (
 
@@ -47,7 +49,10 @@ const Education = () => {
               date={<Date>{it.date}</Date>}
               icon={it?.education ? <EducationIcon /> : <WorkIcon />}
             >
-              <Heading className="vertical-timeline-element-title">{it.heading}</Heading>
+              <Heading className="vertical-timeline-element-title">
+                {it?.image && <Image src={it.image} width="50" height="50" />}
+                {it.heading}
+              </Heading>
               <Position className="vertical-timeline-element-subtitle">{it.position}</Position>
               <Description>
                 {it.description}
@@ -82,12 +87,28 @@ export default Education;
 const Heading = styled.h3`
   font-size: 22px;
   font-weight: 600;
+  position:relative;
+  display: flex;
+    align-items: center;
+    width: 100%;
+
+    span{
+      margin-right:12px !important;
+    }
+  img{
+    z-index: 9999;
+    max-width:50px !important;
+    max-height:50px !important;
+    border-radius:20px !important;
+    object-fit:contain;
+  }
 `;
 
 const Position = styled.h4`
   font-size: 18px;
   font-weight: 600;
   font-style:italic;
+  margin-top:16px;
 `;
 
 
