@@ -86,6 +86,25 @@ export const testimonials: Testimonial[] = [
 
   {
     quote:
+      "Highly recommend David as an exceptional front-end software engineer. He have consistently demonstrated outstanding technical skills.",
+    name: "Nikita Rogachev",
+    job: "Engineering Manager at Tesla",
+  },
+  {
+    quote:
+      "David consistently demonstrates a remarkable attention to detail, tackling a high volume of tasks with precision and dedication to quality.",
+    name: "Ashkan Paya",
+    job: "Sr. Staff Software Development Engineer at Tesla",
+  },
+  {
+    quote:
+      "David's technical expertise was central to advancing our product, driving significant improvements in functionality and performance, while also elevating the quality of our codebase and frontend to new standards.",
+    name: "Roberto J. Sánchez",
+    job: "Staff Software Engineer at Tesla",
+  },
+
+  {
+    quote:
       "David is notable for his substantial level of dedication, consistently getting things done no matter the task at hand. His hard working attitude and steadfast reliability speak volumes about his professional commitment.",
     name: "Jan Pospíšil",
     job: "CTO of Iguana",
@@ -149,6 +168,15 @@ export const timelineItems: Timeline[] = [
     date: "January 2024 - June 2024",
     position: 'Software engineer (React)',
     description: "Designing and developing scalable software systems (in React) to enhance Tesla's Berlin Gigafactory operations with the focus on frontend development. Creating robust solutions to boost production efficiency, increase automation, and support sustainable growth, integrating advanced technologies to meet evolving needs.",
+    lor: [
+      {
+        title: 'Recommendation letter - Ashkan Paya - Sr. Staff Software Development Engineer',
+        path: '/static/documents/ashkan_paya_lor.pdf'
+      },
+      {
+        title: 'Recommendation letter - Roberto J. Sánchez - Staff Software Enginee',
+        path: '/static/documents/lor_roberto_jimenez_sanchez.pdf'
+      }]
   },
   {
     heading: "Iguana",

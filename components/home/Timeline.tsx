@@ -24,7 +24,7 @@ const Education = () => {
                 it?.education ? {
                   background: '#cfcd1e', color: 'rgb(25 11 11)', borderRadius: '27px'
                 } : {
-                  background: 'rgb(33, 150, 243)', color: '#2a1515', borderRadius: '27px'
+                  background: 'rgb(96 178 243)', color: '#2a1515', borderRadius: '27px'
 
                 }
               }
@@ -39,7 +39,7 @@ const Education = () => {
                 it?.education ? {
                   background: 'rgb(207, 205, 30)', color: 'rgb(25 11 11)'
                 } : {
-                  background: 'rgb(33, 150, 243)', color: '#2a1515'
+                  background: 'rgb(96 178 243)', color: '#2a1515'
                 }
               }
               dateStyle={{
@@ -59,6 +59,7 @@ const Education = () => {
 
                 {it.lor?.length > 0 && (
                   <LettersOfRecomendation>
+
                     {it?.lor.map((lorItem) => {
                       return (
                         <div className='lorItem'>
@@ -68,6 +69,7 @@ const Education = () => {
 
                     })}
                   </LettersOfRecomendation>
+
                 )}
 
               </Description>
