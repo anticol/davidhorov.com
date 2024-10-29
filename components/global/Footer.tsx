@@ -75,7 +75,7 @@ function Footer() {
           <div className="mt-2 text-xs ">
             Made by{" "}
             <a
-              href="mailto:contact@davidhorov.com"
+              href="mailto:horov.david@gmail.com"
               className="text-fun-gray-light font-medium"
             >
               David Horov

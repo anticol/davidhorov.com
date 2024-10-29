@@ -63,7 +63,7 @@ export const footer: Footer = {
         },
         {
           name: "Email",
-          link: "mailto:contact@davidhorov.com",
+          link: "mailto:horov.david@gmail.com",
           icon: "/static/icons/mail-f.svg",
           leavesWebsite: true,
         },
