@@ -274,7 +274,7 @@ export const timelineItems: Timeline[] = [
     education: true,
     lor: [{
       title: 'Recommendation letter - Masaryk University',
-      path: 'abc'
+      path: '/static/documents/lor_hana_rudova.pdf'
     }
     ]
   }
