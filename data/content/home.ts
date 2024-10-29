@@ -137,9 +137,16 @@ export const testimonials: Testimonial[] = [
 
 export const timelineItems: Timeline[] = [
   {
+    heading: "Noddi",
+    image: '/static/companies/noddi.jpeg',
+    date: "June 2024 - Present",
+    position: 'Frontend developer',
+    description: "Contributes to the development of a robust frontend architecture for a customer, admin, and worker management platform, streamlining home-delivered car maintenance services. Focused on building efficient, scalable, and user-friendly solutions that drive operational power and seamless experiences across all user roles."
+  },
+  {
     heading: "Tesla",
     image: '/static/companies/tesla.svg',
-    date: "January 2024 - Present",
+    date: "January 2024 - June 2024",
     position: 'Software engineer (React)',
     description: "Designing and developing scalable software systems (in React) to enhance Tesla's Berlin Gigafactory operations with the focus on frontend development. Creating robust solutions to boost production efficiency, increase automation, and support sustainable growth, integrating advanced technologies to meet evolving needs.",
   },
