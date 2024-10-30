@@ -24,9 +24,9 @@ function Skills() {
             <div
               title={item.title}
               key={index}
-              className="w-10 mx-auto flex items-center flex-col justify-center"
+              className="w-14 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} style={item.style} />
+              <img src={item.icon} style={item.style} className="w-10" />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}
               </p>
@@ -34,7 +34,7 @@ function Skills() {
           );
         })}
       </div>
-    </div>
+    </div >
   );
 }
 

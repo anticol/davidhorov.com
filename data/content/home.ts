@@ -25,8 +25,6 @@ type Timeline = {
   lor?: Array<LOR>,
 };
 
-
-
 export const skills: Skill[] = [
   {
     title: "React",
@@ -41,11 +39,6 @@ export const skills: Skill[] = [
     title: "Typescript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
-  {
-    title: "Jotai",
-    icon: "https://cdn.candycode.com/jotai/jotai-mascot.png",
-  },
-
 
   {
     title: "HTML",
@@ -60,13 +53,24 @@ export const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
+    title: "Jotai",
+    icon: "https://cdn.candycode.com/jotai/jotai-mascot.png",
+  },
+  {
+    title: "Redux",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+  },
+  { title: 'React Query', icon: 'https://miro.medium.com/v2/resize:fit:380/1*4g9gB2zUU9x1bZTOJXtZWA.png' },
+
+  {
     title: "Jest",
     icon: "https://www.svgrepo.com/show/353930/jest.svg",
   },
   {
-    title: "Git",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    title: "RT library",
+    icon: "https://testing-library.com/img/octopus-64x64.png",
   },
+
   {
     title: "Firebase",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
@@ -75,12 +79,52 @@ export const skills: Skill[] = [
     title: "Figma",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
+
+  {
+    title: "Tailwind CSS",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png",
+  },
+
+  {
+    title: "styled-components",
+    icon: "https://styled-components.com/logo.png",
+  },
+  {
+    title: "Material-UI",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+  },
+  { title: 'RH Form', icon: 'https://react-hook-form.com/images/logo/react-hook-form-logo-only.png' },
+  {
+    title: "Storybook",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg",
+  },
+  {
+    title: "Zapier",
+    icon: "https://yt3.googleusercontent.com/ytc/AIdro_kmxr4Gm2zB3Fj45CMBgTKlmavwj7vAQaja9g5dBws_kQ=s900-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    title: "Google Analytics",
+    icon: "https://logos-world.net/wp-content/uploads/2021/02/Google-Analytics-Logo.png",
+  },
+  {
+    title: "Mixpanel",
+    icon: "https://pbs.twimg.com/profile_images/1646922666119684096/7rKdBYmN_400x400.png",
+  },
+
+
+
+  { title: 'ESLint', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png' },
   {
     title: "SQL",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/postgresql.svg",
     style: { filter: "invert(1)" },
   },
+  {
+    title: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
 ];
+
 
 export const testimonials: Testimonial[] = [
 
