@@ -204,8 +204,15 @@ export const timelineItems: Timeline[] = [
     image: '/static/companies/noddi.jpeg',
     date: "June 2024 - Present",
     position: 'Frontend developer',
-    description: "Contributes to the development of a robust frontend architecture for a customer, admin, and worker management platform, streamlining home-delivered car maintenance services. Focused on building efficient, scalable, and user-friendly solutions that drive operational power and seamless experiences across all user roles."
+    description: "Contributes to the development of a robust frontend architecture for a customer, admin, and worker management platform, streamlining home-delivered car maintenance services. Focused on building efficient, scalable, and user-friendly solutions that drive operational power and seamless experiences across all user roles.",
+    lor: [
+      {
+        title: 'Recommendation letter - Stian Tornholm Grimsgaard - CTO & Co-founder',
+        path: '/static/documents/lor_stian_grimsgaard.pdf'
+      }]
   },
+
+
   {
     heading: "Tesla",
     image: '/static/companies/tesla.svg',
