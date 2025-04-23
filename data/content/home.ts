@@ -200,6 +200,14 @@ export const testimonials: Testimonial[] = [
 
 export const timelineItems: Timeline[] = [
   {
+    heading: "Kiwi",
+    image: '/static/companies/kiwi.png',
+    date: "January 2025 - Present",
+    position: 'Senior software engineer',
+    description: "Kiwi.com is a travel-tech company offering innovative solutions for booking airline tickets. It combines flights to create unique routes and find better prices, with 100 million daily searches and 70,000 tickets sold each day. I am optimizing payment flow experiences, driving cross-platform innovations, delivering impactful customer-facing features, ensuring financial safety through fraud prevention, and transforming business requirements into seamless technical solutions.",
+  },
+
+  {
     heading: "Noddi",
     image: '/static/companies/noddi.jpeg',
     date: "June 2024 - Present",

@@ -1,7 +1,18 @@
+
 import { kebabCase } from "@/utils/utils";
 import { Project } from "types";
 
 const projects: Project[] = [
+
+  {
+    id: 99,
+    title: "Kiwi.com",
+    desc: "Kiwi.com is a travel-tech company offering innovative solutions for booking airline tickets. It combines flights to create unique routes and find better prices, with 100 million daily searches and 70,000 tickets sold each day. I am optimizing payment flow experiences, driving cross-platform innovations, delivering impactful customer-facing features, ensuring financial safety through fraud prevention, and transforming business requirements into seamless technical solutions.",
+    img: "https://code.kiwi.com/wp-content/uploads/2023/03/0_pCdPLdCJO04IBVlT.jpg",
+    link: "https://kiwi.com",
+    tags: ["React", "Typescript", "NextJS", "CSS/styled-components", "Redux","Turborepo"],
+  },
+
   {
     id: 0,
     title: "Campiri",
@@ -10,6 +21,8 @@ const projects: Project[] = [
     link: "https://campiri.com",
     tags: ["React", "Typescript", "NextJS", "CSS/styled-components", "Redux","Jotai","Turborepo","Zapier","cucumber",'Material UI',"Google Analytics","Stripe"],
   },
+
+ 
 
   {
     id: 1,
@@ -31,10 +44,19 @@ const projects: Project[] = [
 
   {
     id: 3,
-    title: "Fee time in Brno",
+    title: "Free time in Brno",
     desc: "Web application mapping options of spending free time in Brno. It is a mashup application which collects open data from different sources and shows them on the map. It shows the possibilities of spending leisure time in Brno and its surroundings. Created application supports smart city concepts and was successfully deployed to the data portal of the city of Brno.  ",
     img:"/static/projects/volnycasvbrne.jpeg",
     tags: ["React","Javascript", "CSS",],
+  },
+
+  {
+    id: 3,
+    title: "Free Utility Tools",
+    desc: "Free Utility Tools is a collection of free online tools that help you with your daily tasks. It includes tools for image conversion, text manipulation, and more. I have been a part of frontend dev team, with the role of developer and leader.",
+    img:"https://freeutilitytools.com/images/og_image.jpg",
+    link: "https://freeutilitytools.com",
+    tags: ["React", "Typescript", "NextJS", "CSS/styled-components"],
   },
 
   {
