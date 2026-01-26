@@ -7,7 +7,9 @@ type Skill = {
 type Testimonial = {
   quote: string,
   name: string,
-  job: string
+  job: string,
+  company?: string,
+  image?: string,
 };
 
 type LOR = {
@@ -26,65 +28,57 @@ type Timeline = {
 };
 
 export const skills: Skill[] = [
+  // Essential - Core Frontend
   {
-    title: "React",
+    title: "React 19",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
-    title: "NextJS",
+    title: "Next.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
     style: { filter: "invert(1)" },
   },
   {
-    title: "Typescript",
+    title: "TypeScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
-
   {
-    title: "HTML",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  },
-  {
-    title: "CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  },
-  {
-    title: "Javascript",
+    title: "JavaScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+
+  // State Management & Data
+  {
+    title: "Redux Toolkit",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+  },
+  {
+    title: "GraphQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+  },
+  {
+    title: "Relay",
+    icon: "https://relay.dev/img/relay.svg",
+  },
+  {
+    title: "React Query",
+    icon: "https://miro.medium.com/v2/resize:fit:380/1*4g9gB2zUU9x1bZTOJXtZWA.png",
   },
   {
     title: "Jotai",
     icon: "https://cdn.candycode.com/jotai/jotai-mascot.png",
   },
   {
-    title: "Redux",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-  },
-  { title: 'React Query', icon: 'https://miro.medium.com/v2/resize:fit:380/1*4g9gB2zUU9x1bZTOJXtZWA.png' },
-
-  {
-    title: "Jest",
-    icon: "https://www.svgrepo.com/show/353930/jest.svg",
-  },
-  {
-    title: "RT library",
-    icon: "https://testing-library.com/img/octopus-64x64.png",
+    title: "XState",
+    icon: "https://raw.githubusercontent.com/statelyai/xstate/main/assets/logo.svg",
+    style: { filter: "invert(1)" },
   },
 
-  {
-    title: "Firebase",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-  },
-  {
-    title: "Figma",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  },
-
+  // Styling
   {
     title: "Tailwind CSS",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png",
   },
-
   {
     title: "styled-components",
     icon: "https://styled-components.com/logo.png",
@@ -93,15 +87,78 @@ export const skills: Skill[] = [
     title: "Material-UI",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
   },
-  { title: 'RH Form', icon: 'https://react-hook-form.com/images/logo/react-hook-form-logo-only.png' },
+
+  // Testing
+  {
+    title: "Jest",
+    icon: "https://www.svgrepo.com/show/353930/jest.svg",
+  },
+  {
+    title: "Testing Library",
+    icon: "https://testing-library.com/img/octopus-64x64.png",
+  },
+  {
+    title: "Playwright",
+    icon: "https://playwright.dev/img/playwright-logo.svg",
+  },
+
+  // Forms & Validation
+  {
+    title: "React Hook Form",
+    icon: "https://react-hook-form.com/images/logo/react-hook-form-logo-only.png",
+  },
+  {
+    title: "Zod",
+    icon: "https://zod.dev/logo.svg",
+  },
+
+  // Internationalization
+  {
+    title: "react-intl",
+    icon: "https://formatjs.io/img/logo.svg",
+  },
+
+  // API & Backend Integration
+  {
+    title: "OpenAPI",
+    icon: "https://www.svgrepo.com/show/306500/openapi-initiative.svg",
+  },
+  {
+    title: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  },
+
+  // Design & Component Libraries
   {
     title: "Storybook",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg",
   },
   {
-    title: "Zapier",
-    icon: "https://yt3.googleusercontent.com/ytc/AIdro_kmxr4Gm2zB3Fj45CMBgTKlmavwj7vAQaja9g5dBws_kQ=s900-c-k-c0x00ffffff-no-rj",
+    title: "Figma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
+
+  // Fundamentals
+  {
+    title: "HTML5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    title: "CSS3",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+
+  // DevOps & Tools
+  {
+    title: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    title: "ESLint",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png",
+  },
+
+  // Analytics & Automation
   {
     title: "Google Analytics",
     icon: "https://logos-world.net/wp-content/uploads/2021/02/Google-Analytics-Logo.png",
@@ -110,41 +167,51 @@ export const skills: Skill[] = [
     title: "Mixpanel",
     icon: "https://pbs.twimg.com/profile_images/1646922666119684096/7rKdBYmN_400x400.png",
   },
-
-
-
-  { title: 'ESLint', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png' },
   {
-    title: "SQL",
-    icon: "https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/postgresql.svg",
-    style: { filter: "invert(1)" },
+    title: "Zapier",
+    icon: "https://yt3.googleusercontent.com/ytc/AIdro_kmxr4Gm2zB3Fj45CMBgTKlmavwj7vAQaja9g5dBws_kQ=s900-c-k-c0x00ffffff-no-rj",
   },
+
+  // Database
   {
-    title: "Git",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    title: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   },
 ];
 
 
 export const testimonials: Testimonial[] = [
-
   {
     quote:
-      "Highly recommend David as an exceptional front-end software engineer. He have consistently demonstrated outstanding technical skills.",
+      "David is a dedicated, skilled, and charismatic frontend developer. His proactive approach means we never had to worry about his workload—he consistently reaches out to ensure he's aligned with the team's highest-priority tasks.",
+    name: "Stian Tornholm Grimsgaard",
+    job: "CTO & Co-founder at Noddi",
+    company: "Noddi",
+    image: "/static/companies/noddi.jpeg",
+  },
+  {
+    quote:
+      "Highly recommend David as an exceptional front-end software engineer. He has consistently demonstrated outstanding technical skills.",
     name: "Nikita Rogachev",
     job: "Engineering Manager at Tesla",
+    company: "Tesla",
+    image: "/static/companies/tesla.svg",
   },
   {
     quote:
       "David consistently demonstrates a remarkable attention to detail, tackling a high volume of tasks with precision and dedication to quality.",
     name: "Ashkan Paya",
     job: "Sr. Staff Software Development Engineer at Tesla",
+    company: "Tesla",
+    image: "/static/companies/tesla.svg",
   },
   {
     quote:
       "David's technical expertise was central to advancing our product, driving significant improvements in functionality and performance, while also elevating the quality of our codebase and frontend to new standards.",
     name: "Roberto J. Sánchez",
     job: "Staff Software Engineer at Tesla",
+    company: "Tesla",
+    image: "/static/companies/tesla.svg",
   },
 
   {
@@ -152,13 +219,16 @@ export const testimonials: Testimonial[] = [
       "David is notable for his substantial level of dedication, consistently getting things done no matter the task at hand. His hard working attitude and steadfast reliability speak volumes about his professional commitment.",
     name: "Jan Pospíšil",
     job: "CTO of Iguana",
+    company: "Iguana",
+    image: "/static/companies/iguana.jpeg",
   },
 
   {
     quote:
       "Given the quality of the developed application and high quality of the thesis text, I nominated him for the Dean’s award, which he successfully got. ",
     name: "doc. Mgr. Hana Rudová, PhD.",
-    job: "Associate professor at Masaryk University in Brno"
+    job: "Associate professor at Masaryk University in Brno",
+    company: "Masaryk University",
   },
 
   {
@@ -166,13 +236,16 @@ export const testimonials: Testimonial[] = [
       "I highly recommend Dávid as a very valuable part of any development team because of his sustained effort to deliver things on time and with very good quality.",
     name: "Antonín Pospíšil",
     job: "Product Lead at Trisbee s.r.o.",
+    company: "Trisbee",
+    image: "/static/companies/trisbee.jpeg",
   },
 
   {
     quote:
-      "His work was allways done on time and in hight quality beyond my expectations",
+      "His work was always done on time and in high quality beyond my expectations.",
     name: "Denis Staník",
     job: "CEO of Riesime Financie",
+    company: "Riesime Financie",
   },
 
 
@@ -187,15 +260,16 @@ export const testimonials: Testimonial[] = [
     quote:
       "David can work diligently with a reasonable amount of independence and reliability. When necessary, he was readily able to investigate and learn new skills.",
     name: "Martin Ukrop",
-    job: "Researcher, teacher, PhD candidate"
+    job: "Researcher, teacher, PhD candidate",
+    company: "Masaryk University",
   },
   {
     quote:
       "David was very helpful with setting up everyitng what we needed. His work was always done in time and in hight quality.",
     name: "Lucie Ulrichová",
     job: "CEO of Bmedic Education",
+    company: "Bmedic Education",
   },
-
 ];
 
 export const timelineItems: Timeline[] = [

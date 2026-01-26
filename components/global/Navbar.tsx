@@ -4,39 +4,52 @@ import { routes } from "@/data/global";
 
 function Navbar({ currentPage }) {
   return (
-    <nav className="flex items-center justify-between">
-      <li className="list-none font-bold text-lg cursor-pointer">
-        <Link href="/">
-          <span className="font-black text-xl flex items-center">
-            {/* <img
-              className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
-              src="/static/logos/logo_no_text.svg"
-              width="60"
-            /> */}
-            {"DavidHorov.com".split("").map((letter, index) => {
-              return (
-                <span key={index} className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100 click:goodbyeLetterAnim">
-                  {letter}
-                </span>
-              );
-            })}
-          </span>
-        </Link>
-      </li>
-      <ul className="flex items-center space-x-10">
+    <nav className="flex items-center justify-between py-2">
+      <Link href="/">
+        <span className="font-black text-xl flex items-center cursor-pointer group">
+          {"DavidHorov.com".split("").map((letter, index) => {
+            return (
+              <span 
+                key={index} 
+                className="hover:text-fun-pink hover:-translate-y-1 transition-all duration-300 hover:duration-100 inline-block"
+                style={{ transitionDelay: `${index * 20}ms` }}
+              >
+                {letter}
+              </span>
+            );
+          })}
+        </span>
+      </Link>
+      
+      <ul className="flex items-center gap-2">
         {routes.map((item, index) => {
+          const isActive = currentPage === item.title;
           return (
-            <li
-              key={index}
-              className={`list-none text-white ${currentPage === item.title
-                ? "opacity-100"
-                : "opacity-40 hover:opacity-100 transition-opacity"
-                }`}
-            >
-              <Link href={item.path}>{item.title}</Link>
+            <li key={index} className="list-none">
+              <Link href={item.path}>
+                <span className={`
+                  px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer
+                  ${isActive 
+                    ? "bg-fun-pink/10 text-fun-pink border border-fun-pink/30" 
+                    : "text-white/60 hover:text-white hover:bg-white/5"
+                  }
+                `}>
+                  {item.title}
+                </span>
+              </Link>
             </li>
           );
         })}
+        <li className="list-none ml-2">
+          <a 
+            href="/static/DAVID_HOROV_CV.pdf" 
+            target="_blank" 
+            rel="noreferrer"
+            className="px-4 py-2 rounded-full text-sm font-medium bg-fun-pink text-white hover:bg-fun-pink-light transition-all duration-300 inline-block"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
     </nav>
   );

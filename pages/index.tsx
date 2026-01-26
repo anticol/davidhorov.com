@@ -6,6 +6,7 @@ import Projects from "@/components/home/Projects";
 import Skills from "@/components/home/Skills";
 import Testimonials from "@/components/home/Testimonials";
 import Education from "@/components/home/Timeline";
+import Recommendations from "@/components/home/Recommendations";
 // import { allPosts } from "contentlayer/generated";
 // import { GetStaticProps } from "next";
 
@@ -26,6 +27,7 @@ export default function Home() {
         <Skills />
         <Education />
         <Testimonials />
+        <Recommendations />
         {/* <Posts allPosts={allPosts} /> */}
       </div>
       <CTA />

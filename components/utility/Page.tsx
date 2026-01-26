@@ -2,14 +2,13 @@ import Footer from "../global/Footer";
 import Head from "next/head";
 import MobileNavbar from "../global/MobileNavbar";
 import Navbar from "../global/Navbar";
-import React, { ReactChildren } from "react";
+import React from "react";
 
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
   const pageTitle = `${currentPage === "Home"
     ? "David Horov - Frontend developer"
     : `${currentPage} - DavidHorov.com`
     }`;
-  console.log(currentPage);
   return (
     <div
       className="w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible"
@@ -43,14 +42,15 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <meta property="og:url" content="https://davidhorov.com/" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={desc} />
-        {/* <meta
-          property="og:image"
-        /> */}
+        <meta property="og:image" content="https://davidhorov.com/static/misc/og.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://davidhorov.com" />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={desc} />
+        <meta property="twitter:image" content="https://davidhorov.com/static/misc/og.png" />
+        
+        <link rel="canonical" href="https://davidhorov.com/" />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

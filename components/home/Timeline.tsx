@@ -10,11 +10,13 @@ import Image from 'next/image';
 const Education = () => {
   return (
 
-    <div className="flex flex-col text-left justify-between pt-8 relative">
-      <div id="learnmore">
-        <SectionTitle title="My working & university experience" />
-      </div>
-      <VerticalTimeline>
+    <div id="experience" className="flex flex-col text-left justify-between pt-8 relative w-full">
+      <SectionTitle title="Experience & Education" />
+      <p className="text-fun-gray-light text-center md:text-left mb-8 max-w-2xl">
+        My professional journey from university to senior engineering roles at leading tech companies.
+      </p>
+      <div className="w-full">
+        <VerticalTimeline lineColor="rgba(0, 199, 255, 0.2)">
 
         {timelineItems.map((it) => {
           return (
@@ -77,8 +79,9 @@ const Education = () => {
           )
         })}
 
-      </VerticalTimeline>
-    </div >
+        </VerticalTimeline>
+      </div>
+    </div>
 
 
   )
@@ -89,20 +92,22 @@ export default Education;
 const Heading = styled.h3`
   font-size: 22px;
   font-weight: 600;
-  position:relative;
+  position: relative;
   display: flex;
-    align-items: center;
-    width: 100%;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
 
-    span{
-      margin-right:12px !important;
-    }
-  img{
+  span {
+    margin-right: 0 !important;
+  }
+  
+  img {
     z-index: 9999;
-    max-width:50px !important;
-    max-height:50px !important;
-    border-radius:20px !important;
-    object-fit:contain;
+    max-width: 50px !important;
+    max-height: 50px !important;
+    border-radius: 12px !important;
+    object-fit: contain;
   }
 `;
 

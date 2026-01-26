@@ -1,0 +1,84 @@
+# David Horov - Frontend Developer
+
+> Personal portfolio website of David Horov, a Senior Frontend/Software Engineer specializing in React, TypeScript, and Next.js.
+
+## About
+
+David Horov is a passionate frontend developer with extensive experience building scalable web applications. He has worked at companies including Tesla, Kiwi.com, Noddi, Iguana, and Trisbee. He holds a Master's degree in Service Science, Management and Engineering from Masaryk University, where he received the Dean's award.
+
+## Current Role
+
+Senior Software Engineer at Kiwi.com (January 2025 - Present), optimizing payment flow experiences, driving cross-platform innovations, and delivering customer-facing features.
+
+## Technical Skills
+
+### Essential (Must-Have)
+- **Frontend Frameworks**: React 19 (with Hooks), Next.js (App Router)
+- **Languages**: TypeScript (strict mode), JavaScript ES6+
+- **State Management**: Redux Toolkit
+- **Data Fetching**: GraphQL, Relay
+- **Styling**: Tailwind CSS
+- **Testing**: Jest, React Testing Library
+- **Version Control**: Git
+
+### Important (Should-Have)
+- **E2E Testing**: Playwright
+- **Internationalization**: react-intl
+- **Form Handling**: React Hook Form, Zod validation
+- **Component Libraries**: Storybook, Design system consumption
+- **Performance Optimization**: Core Web Vitals, code splitting
+
+### Nice-to-Have
+- **State Machines**: XState
+- **API Integration**: OpenAPI codegen
+- **Payments**: Stripe, payment flow optimization
+
+### Additional Skills
+- **Styling**: styled-components, Material-UI
+- **State**: Jotai, React Query
+- **Design**: Figma
+- **Analytics**: Google Analytics, Mixpanel
+- **Automation**: Zapier
+- **Database**: PostgreSQL, Firebase
+
+### Areas of Expertise
+- **Performance**: Web Performance Optimization, Core Web Vitals, Code Splitting, Lazy Loading
+- **SEO**: Technical SEO, Meta Tags, Structured Data, SSR/SSG for SEO
+- **AI/ML**: LLM Integration, AI APIs (OpenAI, Claude), Prompt Engineering
+- **Accessibility**: WCAG Guidelines, Screen Reader Support, Keyboard Navigation
+- **Leadership**: Technical Leadership, Code Review, Mentoring Junior Developers
+- **Process**: Agile/Scrum, CI/CD, DevOps practices
+
+## Work Experience
+
+- **Kiwi.com** (2025-Present): Senior Software Engineer - Payment flow optimization and cross-platform innovations
+- **Noddi** (2024-Present): Frontend Developer - Building customer, admin, and worker management platform
+- **Tesla** (2024): Software Engineer - Developing scalable systems for Berlin Gigafactory operations
+- **Iguana** (2020-2023): Lead Frontend Developer - React/Next.js applications, leading junior developers
+- **Trisbee** (2020): Frontend Developer - Fintech applications
+
+## Notable Projects
+
+- **Kiwi.com**: Travel-tech platform with 100M daily searches
+- **Campiri**: Largest online campervan rental site
+- **Boatsetter**: World's leading boat rental community
+- **Dokempu**: Largest online campsite guide in Czech Republic
+
+## Education
+
+- Master's degree in Service Science, Management and Engineering - Masaryk University (Dean's Award recipient)
+- Bachelor's degree in Computer Science - Masaryk University
+- Exchange programs at University of Balearic Islands and University of Porto
+
+## Contact
+
+- Website: https://davidhorov.com
+- LinkedIn: https://www.linkedin.com/in/davidhorov/
+- GitHub: https://github.com/anticol
+- Email: horov.david@gmail.com
+
+## Pages
+
+- Home: https://davidhorov.com/
+- Projects: https://davidhorov.com/projects
+- CV/Resume: https://davidhorov.com/static/DAVID_HOROV_CV.pdf
