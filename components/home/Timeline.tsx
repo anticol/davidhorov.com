@@ -52,7 +52,7 @@ const Education = () => {
               icon={it?.education ? <EducationIcon /> : <WorkIcon />}
             >
               <Heading className="vertical-timeline-element-title">
-                {it?.image && <Image src={it.image} width="50" height="50" />}
+                {it?.image && <Image src={it.image} width={50} height={50} alt={`${it.heading} company logo`} />}
                 {it.heading}
               </Heading>
               <Position className="vertical-timeline-element-subtitle">{it.position}</Position>
@@ -62,10 +62,12 @@ const Education = () => {
                 {it.lor?.length > 0 && (
                   <LettersOfRecomendation>
 
-                    {it?.lor.map((lorItem) => {
+                    {it?.lor.map((lorItem, lorIndex) => {
                       return (
-                        <div className='lorItem'>
-                          <a target="_blank" href={lorItem.path}>  {lorItem.title}</a>
+                        <div className='lorItem' key={lorIndex}>
+                          <a target="_blank" rel="noreferrer" href={lorItem.path} aria-label={`View ${lorItem.title} (opens in new tab)`}>
+                            {lorItem.title}
+                          </a>
                         </div>
                       )
 

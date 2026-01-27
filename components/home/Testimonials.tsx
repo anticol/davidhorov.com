@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import SectionTitle from "../global/SectionTitle";
 import { testimonials } from "@/data/content/home";
 
@@ -31,10 +32,12 @@ function Testimonials() {
               {item.company && (
                 <div className="absolute -top-3 right-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/[0.1]">
                   {item.image && (
-                    <img 
+                    <Image 
                       src={item.image} 
-                      alt={item.company}
-                      className="w-5 h-5 object-contain rounded"
+                      alt={`${item.company} company logo`}
+                      width={20}
+                      height={20}
+                      className="object-contain rounded"
                     />
                   )}
                   <span className="text-xs font-medium text-white/70">{item.company}</span>

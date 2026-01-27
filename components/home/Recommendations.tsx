@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import SectionTitle from "../global/SectionTitle";
 import { timelineItems } from "@/data/content/home";
 
@@ -85,10 +86,12 @@ function Recommendations() {
               <div className="relative flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-white/[0.08] flex items-center justify-center overflow-hidden border border-white/[0.1]">
                   {branding.logo ? (
-                    <img 
+                    <Image 
                       src={branding.logo} 
-                      alt={lor.company}
-                      className="w-8 h-8 object-contain"
+                      alt={`${lor.company} company logo`}
+                      width={32}
+                      height={32}
+                      className="object-contain"
                     />
                   ) : branding.icon === "briefcase" ? (
                     <BriefcaseIcon />

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import SectionTitle from "../global/SectionTitle";
 
 // Curated skills with reliable icons
@@ -110,10 +111,13 @@ function Skills() {
                   className="flex items-center gap-3 group/skill"
                 >
                   <div className="w-10 h-10 rounded-xl bg-white/[0.05] flex items-center justify-center group-hover/skill:bg-white/[0.1] transition-colors">
-                    <img 
+                    <Image 
                       src={skill.icon} 
-                      alt={skill.title}
-                      className={`w-6 h-6 object-contain ${skill.invert ? 'invert' : ''}`}
+                      alt={`${skill.title} logo`}
+                      width={24}
+                      height={24}
+                      className={`object-contain ${skill.invert ? 'invert' : ''}`}
+                      loading="lazy"
                     />
                   </div>
                   <span className="text-sm text-white/80 group-hover/skill:text-white transition-colors">
@@ -138,10 +142,13 @@ function Skills() {
               key={skill.title}
               className="flex items-center gap-2 px-4 py-2 bg-white/[0.03] border border-white/[0.05] rounded-full hover:bg-white/[0.06] hover:border-white/[0.1] transition-all cursor-default group"
             >
-              <img 
+              <Image 
                 src={skill.icon} 
-                alt={skill.title}
-                className={`w-5 h-5 object-contain opacity-70 group-hover:opacity-100 transition-opacity ${skill.invert ? 'invert' : ''}`}
+                alt={`${skill.title} logo`}
+                width={20}
+                height={20}
+                className={`object-contain opacity-70 group-hover:opacity-100 transition-opacity ${skill.invert ? 'invert' : ''}`}
+                loading="lazy"
               />
               <span className="text-sm text-white/60 group-hover:text-white/90 transition-colors">
                 {skill.title}

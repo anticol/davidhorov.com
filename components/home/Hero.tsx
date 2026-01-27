@@ -30,24 +30,33 @@ function Hero() {
             offset={-30}
             smooth={true}
             duration={500}
+            role="button"
+            tabIndex={0}
+            aria-label="Scroll to learn more about David Horov"
+            className="glow-button cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-white border-2 text-xl rounded-full border-fun-pink bg-fun-pink hover:bg-fun-pink-light transition-all duration-300 shadow-lg shadow-fun-pink/20 inline-block"
           >
-            <div className="glow-button cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-white border-2 text-xl rounded-full border-fun-pink bg-fun-pink hover:bg-fun-pink-light transition-all duration-300 shadow-lg shadow-fun-pink/20">
-              More about me
-            </div>
+            More about me
           </ScrollLink>
           
-          <a href="/static/DAVID_HOROV_CV.pdf" target="_blank" rel="noreferrer">
-            <div className="glow-button cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-pink border-2 text-xl rounded-full border-fun-pink bg-transparent hover:bg-fun-pink hover:text-white transition-all duration-300">
-              Download my CV
-            </div>
+          <a 
+            href="/static/DAVID_HOROV_CV.pdf" 
+            target="_blank" 
+            rel="noreferrer"
+            aria-label="Download David Horov's CV (opens in new tab)"
+            className="glow-button cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-pink border-2 text-xl rounded-full border-fun-pink bg-transparent hover:bg-fun-pink hover:text-white transition-all duration-300 inline-block"
+          >
+            Download my CV
           </a>
         </div>
         
         {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-50 hover:opacity-100 transition-opacity">
-          <span className="text-xs text-fun-gray mb-2">Scroll</span>
-          <div className="w-6 h-10 border-2 border-fun-gray rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-fun-gray rounded-full animate-bounce" />
+        <div 
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity"
+          aria-hidden="true"
+        >
+          <span className="text-xs text-fun-gray-light mb-2">Scroll</span>
+          <div className="w-6 h-10 border-2 border-fun-gray-light rounded-full flex justify-center pt-2">
+            <div className="w-1.5 h-3 bg-fun-gray-light rounded-full animate-bounce" />
           </div>
         </div>
       </div>

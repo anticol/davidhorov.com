@@ -1,5 +1,6 @@
 import Footer from "../global/Footer";
 import Head from "next/head";
+import Script from "next/script";
 import MobileNavbar from "../global/MobileNavbar";
 import Navbar from "../global/Navbar";
 import React from "react";
@@ -35,8 +36,12 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
           href="/static/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/static/favicon/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
         <meta name="title" content={pageTitle} />
         <meta name="description" content={desc} />
+        <meta name="author" content="David Horov" />
+        <meta name="theme-color" content="#000a1f" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://davidhorov.com/" />
@@ -51,38 +56,50 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <meta property="twitter:image" content="https://davidhorov.com/static/misc/og.png" />
         
         <link rel="canonical" href="https://davidhorov.com/" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      </Head>
+      
+      {/* Google Tag Manager - loaded after interactive for better performance */}
+      <Script
+        id="gtm-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KC3CN7V');`,
-          }}
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-                page_path: window.location.pathname,
-              });
-          `,
-          }}
-        />
-      </Head>
-      <noscript
-        dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC3CN7V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}
-      ></noscript>
+      />
+      
+      {/* Google Analytics - loaded after interactive */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        strategy="afterInteractive"
+      />
+      <Script
+        id="ga-config"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+      
+      <noscript>
+        <iframe 
+          src="https://www.googletagmanager.com/ns.html?id=GTM-KC3CN7V"
+          height="0" 
+          width="0" 
+          style={{display: 'none', visibility: 'hidden'}}
+          title="Google Tag Manager"
+        />
+      </noscript>
 
       <main className="p-5 w-full flex-1 text-center">
         <div className="hidden sm:block z-100">
@@ -106,5 +123,5 @@ type PageProps = {
     title?: string;
     desc: string;
   };
-  children?: JSX.Element | JSX.Element[];
+  children?: React.ReactNode;
 };

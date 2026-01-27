@@ -10,11 +10,13 @@ function ProjectCard({ project }) {
   
   const ImageContent = () => (
     <>
-      <div className="project-image-container rounded-xl overflow-hidden">
-        <img
-          className={`w-full h-48 object-cover rounded-xl transition-transform duration-500 ${hasLink ? 'group-hover:scale-105' : ''}`}
+      <div className="project-image-container rounded-xl overflow-hidden relative" style={{ height: '192px' }}>
+        <Image
+          className={`object-cover rounded-xl transition-transform duration-500 ${hasLink ? 'group-hover:scale-105' : ''}`}
           src={project.img}
-          alt={project.title}
+          alt={`Screenshot of ${project.title} project`}
+          layout="fill"
+          objectFit="cover"
         />
       </div>
       {/* Hover overlay with view text - only show if has link */}

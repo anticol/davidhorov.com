@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap");
+/* Fonts are now loaded via _document.tsx with preload for better performance */
 
 @tailwind base;
 @tailwind components;
@@ -85,8 +85,8 @@ body {
 /* Fade in animation for sections */
 .fade-in-section {
   opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease forwards;
+  transform: translateY(20px);
+  animation: fadeInUp 0.4s ease forwards;
 }
 
 @keyframes fadeInUp {
@@ -452,7 +452,7 @@ pre {
 }
 
 .heroElem {
-  animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);
+  animation: scaleDownIn 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .heroElem .sqD:not(.squiggle-hero-pop1) {

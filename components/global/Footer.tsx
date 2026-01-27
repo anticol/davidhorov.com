@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { footer } from "@/data/global";
 
@@ -69,10 +70,12 @@ function Footer() {
                   className="w-10 h-10 rounded-full bg-white/5 hover:bg-fun-pink/20 border border-white/10 hover:border-fun-pink/30 flex items-center justify-center transition-all group"
                   title={link.name}
                 >
-                  <img 
-                    src={link.icon} 
-                    alt={link.name}
-                    className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
+                  <Image 
+                    src={link.icon!} 
+                    alt={`${link.name} icon - Visit my ${link.name} profile`}
+                    width={20}
+                    height={20}
+                    className="opacity-60 group-hover:opacity-100 transition-opacity"
                   />
                 </a>
               ))}
@@ -85,17 +88,19 @@ function Footer() {
           <div className="flex items-center gap-2 text-xs text-fun-gray">
             <span>Built with</span>
             <span className="flex items-center gap-1">
-              <img
+              <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                width="16"
-                alt="React"
+                width={16}
+                height={16}
+                alt="React framework logo"
                 className="opacity-60"
               />
-              <img
+              <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-                width="28"
+                width={28}
+                height={16}
                 className="invert opacity-60"
-                alt="Next.js"
+                alt="Next.js framework logo"
               />
             </span>
           </div>

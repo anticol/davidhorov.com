@@ -42,6 +42,8 @@ export default function MobileNavbar() {
               className="mr-3"
               src="/static/logos/logo_full.svg"
               width="90"
+              height="32"
+              alt="David Horov - Home"
             />
           </Link>
         </li>
