@@ -34,6 +34,14 @@ const projects: Project[] = [
   },
 
   {
+    id: 100,
+    title: "Tesla Manufacturing Execution System",
+    desc: "Global manufacturing execution system used across all Tesla factories worldwide, including the USA, China, and the EU. Mission-critical application managing parts directly on the production line—routing, painting workflows, and real-time problem reporting. As a Frontend Developer, I developed and maintained a production-grade UI used daily by factory operators and production teams. Implemented real-time updates via WebSockets for instant data synchronization across stations and live visibility of line status, part movement, and reported issues. Built with a strong focus on performance, scalability, and reliability to support high-speed manufacturing operations in multiple international factories.",
+    img: "/static/projects/tesla.png",
+    tags: ["React", "TypeScript", "WebSockets", "Real-time"],
+  },
+
+  {
     id: 0,
     title: "Campiri",
     desc: "Campiri is the largest online campervan and recreational vehicle rental site. I have been a part of frontend dev team, with the role of developer and leader. I have developed public sites, landing pages, whole booking flow, payments integration, connections to automated tools like Zapier,... ",

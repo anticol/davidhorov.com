@@ -20,6 +20,7 @@ module.exports = {
             'react-hook-form.com',
             'code.kiwi.com',
             'freeutilitytools.com',
+            'images.unsplash.com',
         ],
         formats: ['image/avif', 'image/webp'],
     },
