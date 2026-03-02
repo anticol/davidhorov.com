@@ -327,7 +327,7 @@ function ProjectCard({ project }) {
           </p>
 
           <ul className="flex flex-wrap items-center mt-3 gap-2 list-none">
-            {project.tags.map((tag) => (
+            {project.tags.slice(0, 6).map((tag) => (
               <li key={tag}>
                 <Link href={`/projects/tag/${kebabCase(tag)}`}>
                   <span
@@ -339,6 +339,13 @@ function ProjectCard({ project }) {
                 </Link>
               </li>
             ))}
+            {project.tags.length > 6 && (
+              <li>
+                <span className="inline-block rounded-full text-xs bg-fun-pink/10 border border-fun-pink/20 py-1 px-3">
+                  +{project.tags.length - 6}
+                </span>
+              </li>
+            )}
           </ul>
         </div>
       </div>

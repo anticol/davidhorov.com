@@ -7,7 +7,7 @@ const projects: Project[] = [
   {
     id: 97,
     title: "WAStore",
-    desc: "Built and launched WAStore solo — a production SaaS platform that turns any small business into a WhatsApp-powered online store in minutes. Engineered the full stack with Next.js 14, TypeScript, and Firebase, making deliberate architectural decisions across multi-tenant data isolation, SSR/SSG rendering strategies, and real-time Firestore updates. Scaled the product to support 6 languages through a custom i18n pipeline with locale-aware App Router routing, making it accessible across Europe and Latin America. Went beyond the UI layer to implement IndexNow instant indexing, dynamic XML sitemaps, and JSON-LD structured data — treating SEO as a first-class engineering concern, not an afterthought. From auth flows and coupon engines to QR code sharing and multi-currency pricing, every feature was designed, built, and shipped by one person - proving the ability to own a product completely, from database schema to production deploy.",
+    desc: "I built WAStore <span style='color:#ffffff'>from scratch, on my own</span>, and shipped it to production - a SaaS that lets any small business set up a <span style='color:#ffffff'>WhatsApp-powered online store</span> in minutes. I made every call: multi-tenant data isolation, auth flows, a coupon engine, QR code sharing, multi-currency pricing, and a full i18n pipeline covering <span style='color:#ffffff'>6 languages</span> across Europe and Latin America. SEO was baked in from day one — IndexNow indexing, dynamic sitemaps, JSON-LD structured data — not bolted on at the end. It's live, it works, and building it solo gave me a clear picture of what it means to truly own a product.",
     img: "/static/projects/wastore.png",
     link: "https://wastore.app",
     tags: ["React", "TypeScript", "Next.js", "Firebase"],
@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     id: 98,
     title: "Train The Brain",
-    desc: "TrainTheBrain is a production-grade web application I designed and shipped solo, built on Next.js 14+ with a strong focus on delivering a fast, polished, and accessible user experience across five languages. On the frontend, I engineered a fully custom internationalisation system from scratch — locale-aware routing, dynamic dictionary loading, per-locale SEO metadata, and hreflang signals — without relying on any off-the-shelf i18n framework. I built every UI surface myself: interactive cognitive games, leaderboards, membership flows, user profiles, and gift voucher redemption, keeping the experience cohesive and performant throughout. The project pushed me across the full React/Next.js surface area — server components, client components, middleware, dynamic routing, metadata APIs, and context-based state — giving me deep, hands-on fluency with the modern frontend stack. The results speak for themselves: the platform attracts over 10,000 monthly visitors who spend an average of 5+ minutes per session — a strong signal that the frontend experience is genuinely engaging, not just functional.",
+    desc: "TrainTheBrain is a cognitive training platform I <span style='color:#ffffff'>designed and shipped solo</span> — brain games, leaderboards, user profiles, memberships, and gift voucher redemption, all in <span style='color:#ffffff'>five languages (EN, ES, PT, DE, FE)</span>. The game design was shaped through direct communication with <span style='color:#ffffff'>psychologists and cognitive experts</span> to make sure the exercises are actually effective. The platform now gets <span style='color:#ffffff'>10,000+ monthly visitors</span> who average <span style='color:#ffffff'>5+ minutes per session</span>. Pro memberships are handled through <span style='color:#ffffff'>Stripe</span>, covering subscriptions, gift vouchers, and one-time payments.",
     img: "/static/projects/train.png",
     link: "https://trainthebrain.app",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Firebase", "Stripe"],
@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     id: 99,
     title: "Kiwi.com",
-    desc: "Kiwi.com is a travel-tech company offering innovative solutions for booking airline tickets. It combines flights to create unique routes and find better prices, with 100 million daily searches and 70,000 tickets sold each day. I am optimizing payment flow experiences, driving cross-platform innovations, delivering impactful customer-facing features, ensuring financial safety through fraud prevention, and transforming business requirements into seamless technical solutions.",
+    desc: "Kiwi.com is a travel-tech company offering innovative solutions for booking airline tickets. It combines flights to create unique routes and find better prices, with <span style='color:#ffffff'>100 million daily searches</span> and <span style='color:#ffffff'>70,000 tickets sold each day</span>. I am optimizing <span style='color:#ffffff'>payment flow experiences</span>, driving cross-platform innovations, delivering impactful customer-facing features, ensuring financial safety through <span style='color:#ffffff'>fraud prevention</span>, and transforming business requirements into seamless technical solutions.",
     img: "https://code.kiwi.com/wp-content/uploads/2023/03/0_pCdPLdCJO04IBVlT.jpg",
     link: "https://kiwi.com",
     tags: ["React", "Typescript", "NextJS", "CSS/styled-components", "Redux","Turborepo"],
@@ -36,7 +36,7 @@ const projects: Project[] = [
   {
     id: 100,
     title: "Tesla Manufacturing Execution System",
-    desc: "Global manufacturing execution system used across all Tesla factories worldwide, including the USA, China, and the EU. Mission-critical application managing parts directly on the production line—routing, painting workflows, and real-time problem reporting. As a Frontend Developer, I developed and maintained a production-grade UI used daily by factory operators and production teams. Implemented real-time updates via WebSockets for instant data synchronization across stations and live visibility of line status, part movement, and reported issues. Built with a strong focus on performance, scalability, and reliability to support high-speed manufacturing operations in multiple international factories.",
+    desc: "<span style='color:#ffffff'>Global manufacturing execution system</span> used across all Tesla factories worldwide, including the <span style='color:#ffffff'>USA, China, and the EU</span>. Mission-critical application managing parts directly on the production line - routing, painting workflows, and real-time problem reporting. As a Frontend Developer, I developed and maintained a production-grade UI used daily by factory operators and production teams. Implemented <span style='color:#ffffff'>real-time updates via WebSockets</span> for instant data synchronization across stations and live visibility of line status, part movement, and reported issues. Built with a strong focus on performance, scalability, and reliability to support high-speed manufacturing operations in multiple international factories.",
     img: "/static/projects/tesla.png",
     tags: ["React", "TypeScript", "WebSockets", "Real-time"],
   },
@@ -44,7 +44,7 @@ const projects: Project[] = [
   {
     id: 0,
     title: "Campiri",
-    desc: "Campiri is the largest online campervan and recreational vehicle rental site. I have been a part of frontend dev team, with the role of developer and leader. I have developed public sites, landing pages, whole booking flow, payments integration, connections to automated tools like Zapier,... ",
+    desc: "Campiri is the <span style='color:#ffffff'>largest online campervan and recreational vehicle rental site</span>. I have been a part of the frontend dev team, with the role of <span style='color:#ffffff'>developer and leader</span>. I have developed public sites, landing pages, whole booking flow, payments integration, connections to automated tools like Zapier,... ",
     img: "/static/projects/og_image_campiri_main.png",
     link: "https://campiri.com",
     tags: ["React", "Typescript", "NextJS", "CSS/styled-components", "Redux","Jotai","Turborepo","Zapier","cucumber",'Material UI',"Google Analytics","Stripe"],
@@ -81,7 +81,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Free Utility Tools",
-    desc: "Free Utility Tools is a collection of free online tools that help you with your daily tasks. It includes tools for image conversion, text manipulation, and more. I have been a part of frontend dev team, with the role of developer and leader.",
+    desc: "A side project I built and lead — a growing set of free, browser-based tools for everyday tasks like image conversion and text manipulation. It's a good sandbox for experimenting with things outside of work constraints, and it gets real traffic from people who actually use it.",
     img:"https://freeutilitytools.com/images/og_image.jpg",
     link: "https://freeutilitytools.com",
     tags: ["React", "Typescript", "NextJS", "CSS/styled-components"],
