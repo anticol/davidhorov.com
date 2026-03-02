@@ -7,7 +7,7 @@ const projects: Project[] = [
   {
     id: 97,
     title: "WAStore",
-    desc: "Create your free WhatsApp store in 90 seconds. A platform that lets anyone build an online store with a custom URL (yourstore.wastore.app), SEO-optimized for Google visibility. Orders flow directly to WhatsApp. Scaled to 200+ online stores and 1,500+ products listed. Features product variants, order management, QR code sharing, and multi-language support (EN, SK, CZ, PL, ES, FR). 100% free forever.",
+    desc: "Built and launched WAStore solo — a production SaaS platform that turns any small business into a WhatsApp-powered online store in minutes. Engineered the full stack with Next.js 14, TypeScript, and Firebase, making deliberate architectural decisions across multi-tenant data isolation, SSR/SSG rendering strategies, and real-time Firestore updates. Scaled the product to support 6 languages through a custom i18n pipeline with locale-aware App Router routing, making it accessible across Europe and Latin America. Went beyond the UI layer to implement IndexNow instant indexing, dynamic XML sitemaps, and JSON-LD structured data — treating SEO as a first-class engineering concern, not an afterthought. From auth flows and coupon engines to QR code sharing and multi-currency pricing, every feature was designed, built, and shipped by one person - proving the ability to own a product completely, from database schema to production deploy.",
     img: "/static/projects/wastore.png",
     link: "https://wastore.app",
     tags: ["React", "TypeScript", "Next.js", "Firebase"],
@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     id: 98,
     title: "Train The Brain",
-    desc: "A full-scale brain training platform with 26+ scientifically-designed games to enhance memory, speed, and problem-solving skills. Built and launched solo. <b> Over 10k monthly visits with 5+ minutes average time on site </b>. Features premium subscription funnel, analytics, SEO optimization, and games across memory, speed, logic, and perception categories.",
+    desc: "TrainTheBrain is a production-grade web application I designed and shipped solo, built on Next.js 14+ with a strong focus on delivering a fast, polished, and accessible user experience across five languages. On the frontend, I engineered a fully custom internationalisation system from scratch — locale-aware routing, dynamic dictionary loading, per-locale SEO metadata, and hreflang signals — without relying on any off-the-shelf i18n framework. I built every UI surface myself: interactive cognitive games, leaderboards, membership flows, user profiles, and gift voucher redemption, keeping the experience cohesive and performant throughout. The project pushed me across the full React/Next.js surface area — server components, client components, middleware, dynamic routing, metadata APIs, and context-based state — giving me deep, hands-on fluency with the modern frontend stack. The results speak for themselves: the platform attracts over 10,000 monthly visitors who spend an average of 5+ minutes per session — a strong signal that the frontend experience is genuinely engaging, not just functional.",
     img: "/static/projects/train.png",
     link: "https://trainthebrain.app",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Firebase", "Stripe"],
