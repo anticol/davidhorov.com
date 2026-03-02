@@ -114,7 +114,7 @@ function ProjectCard({ project }) {
         </p>
         
         <ul className="flex flex-wrap items-center mt-3 gap-2 list-none">
-          {project.tags.slice(0, 5).map((tag) => {
+          {project.tags.map((tag) => {
             return (
               <li key={tag}>
                 <Link href={`/projects/tag/${kebabCase(tag)}`}>
@@ -125,9 +125,6 @@ function ProjectCard({ project }) {
               </li>
             );
           })}
-          {project.tags.length > 5 && (
-            <li className="text-xs text-fun-gray">+{project.tags.length - 5} more</li>
-          )}
         </ul>
       </div>
     </div>

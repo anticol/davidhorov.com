@@ -5,6 +5,26 @@ import { Project } from "types";
 const projects: Project[] = [
 
   {
+    id: 97,
+    title: "WAStore",
+    desc: "Create your free WhatsApp store in 90 seconds. A platform that lets anyone build an online store with a custom URL (yourstore.wastore.app), SEO-optimized for Google visibility. Orders flow directly to WhatsApp. Scaled to 200+ online stores and 1,500+ products listed. Features product variants, order management, QR code sharing, and multi-language support (EN, SK, CZ, PL, ES, FR). 100% free forever.",
+    img: "/static/projects/wastore.png",
+    link: "https://wastore.app",
+    tags: ["React", "TypeScript", "Next.js", "Firebase"],
+    personal: true,
+  },
+
+  {
+    id: 98,
+    title: "Train The Brain",
+    desc: "A full-scale brain training platform with 26+ scientifically-designed games to enhance memory, speed, and problem-solving skills. Built and launched solo. Over 10k monthly visits with 5+ minutes average time on site. Features premium subscription funnel, analytics, SEO optimization, and games across memory, speed, logic, and perception categories.",
+    img: "/static/projects/train.png",
+    link: "https://trainthebrain.app",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Firebase", "Stripe"],
+    personal: true,
+  },
+
+  {
     id: 99,
     title: "Kiwi.com",
     desc: "Kiwi.com is a travel-tech company offering innovative solutions for booking airline tickets. It combines flights to create unique routes and find better prices, with 100 million daily searches and 70,000 tickets sold each day. I am optimizing payment flow experiences, driving cross-platform innovations, delivering impactful customer-facing features, ensuring financial safety through fraud prevention, and transforming business requirements into seamless technical solutions.",
@@ -57,6 +77,7 @@ const projects: Project[] = [
     img:"https://freeutilitytools.com/images/og_image.jpg",
     link: "https://freeutilitytools.com",
     tags: ["React", "Typescript", "NextJS", "CSS/styled-components"],
+    personal: true,
   },
 
   {

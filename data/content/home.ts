@@ -284,7 +284,7 @@ export const timelineItems: Timeline[] = [
   {
     heading: "Noddi",
     image: '/static/companies/noddi.jpeg',
-    date: "June 2024 - Present",
+    date: "June 2025 - December 2025",
     position: 'Frontend developer',
     description: "Contributes to the development of a robust frontend architecture for a customer, admin, and worker management platform, streamlining home-delivered car maintenance services. Focused on building efficient, scalable, and user-friendly solutions that drive operational power and seamless experiences across all user roles.",
     lor: [
