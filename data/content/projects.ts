@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     id: 98,
     title: "Train The Brain",
-    desc: "A full-scale brain training platform with 26+ scientifically-designed games to enhance memory, speed, and problem-solving skills. Built and launched solo. Over 10k monthly visits with 5+ minutes average time on site. Features premium subscription funnel, analytics, SEO optimization, and games across memory, speed, logic, and perception categories.",
+    desc: "A full-scale brain training platform with 26+ scientifically-designed games to enhance memory, speed, and problem-solving skills. Built and launched solo. <b> Over 10k monthly visits with 5+ minutes average time on site </b>. Features premium subscription funnel, analytics, SEO optimization, and games across memory, speed, logic, and perception categories.",
     img: "/static/projects/train.png",
     link: "https://trainthebrain.app",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Firebase", "Stripe"],
